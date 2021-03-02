@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Academy: Седона каталог</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html"
+          ><img
+            src="./img/index-logo.svg"
+            alt="City of sedona"
+            width="138"
+            height="70"
+        /></a>
+        <ul>
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="blank.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Гостиницы</h1>
+
+      <section>
+        <h2>Фильтр поиска</h2>
+
+        <div class="search-infrastructure">
+          <h3>Инфраструктура</h3>
+          <fieldset>
+            <label><input type="checkbox" id="pool" />Бассейн</label>
+            <label><input type="checkbox" id="parking" />Парковка</label>
+            <label><input type="checkbox" id="wi-fi" />Wi-fi</label>
+          </fieldset>
+        </div>
+
+        <div class="search-housing-type">
+          <h3>Тип жилья</h3>
+          <fieldset>
+            <label><input type="checkbox" id="hotel" />Гостиница</label>
+            <label><input type="checkbox" id="motel" />Мотель</label>
+            <label><input type="checkbox" id="apartments" />Апартаменты</label>
+          </fieldset>
+        </div>
+
+        <div class="search-cost-per-day">
+          <h3>Стоимость в сутки (Р)</h3>
+          <div>От 0</div>
+          <div>До 3000</div>
+          <div>
+            <input type="range" /><br />
+            <button type="button">Показать</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Результаты поиска</h2>
+        <div>Найдено: 3</div>
+        <p>Сортировка:</p>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По рейтингу</li>
+        </ul>
+
+        <div>
+          <button type="button">Кнопка вверх</button>
+          <button type="button">Кнопка вниз</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Результаты поиска: гостиницы</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <h3>Amara resort & spa</h3>
+              <img
+                src="./img/hotels/Amara.png"
+                alt="Amara resort & spa"
+                width="135"
+                height="90"
+              />
+              <div>Рейтинг</div>
+              <p><span>Гостиница</span><span>От 4000 р.</span></p>
+              <div>
+                <p>
+                  <button type="button">Подробнее</button>
+                  <button type="button">Забронировать</button>
+                </p>
+                <div>Рейтинг: 8.5</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Desert Quail inn</h3>
+              <img
+                src="./img/hotels/Desert.png"
+                alt="Desert Quail inn"
+                width="135"
+                height="90"
+              />
+              <div>Рейтинг</div>
+              <p><span>Мотель</span><span>От 3000 р.</span></p>
+              <div>
+                <p>
+                  <button type="button">Подробнее</button>
+                  <button type="button">Забронировать</button>
+                </p>
+                <div>Рейтинг: 8.9</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Villas at poco diablo</h3>
+              <img
+                src="./img/hotels/Villas.png"
+                alt="Villas at poco diablo"
+                width="135"
+                height="90"
+              />
+              <div>Рейтинг</div>
+              <p><span>Апартаменты</span><span>От 2000 р.</span></p>
+              <div>
+                <p>
+                  <button type="button">Подробнее</button>
+                  <button type="button">Забронировать</button>
+                </p>
+                <div>Рейтинг: 9.2</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h2>Visit sedona</h2>
+        <p>#visitsedona</p>
+        <p>тел: +7(495) 666-01-66</p>
+      </section>
+
+      <section>
+        <h2>Давайте дружить</h2>
+        <ul>
+          <li>
+            <a href="#">Твиттер</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Ютьюб</a>
+          </li>
+        </ul>
+      </section>
+      <p>
+        Website by
+        <img
+          src="./img/logo-htmlacademy.svg"
+          alt="html academy"
+          width="115"
+          height="41"
+        />
+      </p>
+    </footer>
+  </body>
+</html>

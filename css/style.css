@@ -1,0 +1,187 @@
+:root {
+  --basic-black: #000000;
+  --basic-light-black: #333333;
+  --basic-white: #ffffff;
+  --basic-blue: #81b3d2;
+  --basic-gray: #766357;
+
+  --special-black: rgba(0, 0, 0, 0.3);
+  --special-blue: #669ec0;
+  --special-dark-blue: #5496bd;
+  --special-white: rgba(255, 255, 255, 0.3);
+  --special-gray: #cacaca;
+  --special-dark-gray: #666666;
+  --special-dark-btn-gray: #604e43;
+  --special-dark-btn-gray-active: #503e33;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  counter-reset: p;
+}
+
+.main-content {
+  background-color: var(--basic-black);
+  background-image: url("../img/sedona-background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 509px;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+h3 {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+h3:hover {
+  color: var(--basic-blue);
+}
+
+a:active,
+h3:active {
+  color: var(--special-black);
+}
+
+a:visited {
+  color: var(--basic-gray);
+}
+
+footer div a {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.background-shape {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.interested h2 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.search h3 {
+  font-size: 16px;
+}
+
+p {
+  line-height: 21px;
+}
+
+.search {
+  background-image: url("../img/sedona-catalog-background.png");
+  background-size: cover;
+  color: white;
+}
+
+.search label {
+  line-height: 21px;
+}
+
+section div p::before {
+  counter-increment: p;
+  content: "— № " counter(p) " —\a";
+  white-space: pre;
+}
+
+footer li {
+  background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
+  position: relative;
+}
+
+footer li img {
+  position: absolute;
+}
+
+section button {
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  padding: 3px 17px;
+}
+
+.show {
+  background-color: transparent;
+  padding: 8px 36px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.show:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.details {
+  background-color: var(--basic-blue);
+}
+
+.details:hover {
+  background-color: var(--special-blue);
+}
+
+.details:active {
+  background-color: var(--special-dark-blue);
+  color: var(--special-white);
+}
+
+.booking {
+  background-color: var(--basic-gray);
+}
+
+.booking:hover {
+  background-color: var(--special-dark-btn-gray);
+}
+
+.booking:active {
+  background-color: var(--special-dark-btn-gray-active);
+  color: var(--special-white);
+}

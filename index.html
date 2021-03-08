@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a
           ><img
             src="./img/index-logo.svg"
@@ -25,7 +36,7 @@
 
     <main>
       <h1 class="visually-hidden">Sedona</h1>
-      <section>
+      <section class="main-content">
         <p>
           <img src="./img/welcome.svg" alt="Welcome" width="188" height="45" />
           <img
@@ -41,6 +52,11 @@
             height="213"
           />
         </p>
+        <img
+          src="./img/sedona-background-shape.svg"
+          class="background-shape"
+          alt=""
+        />
       </section>
 
       <section>
@@ -81,37 +97,31 @@
       <section>
         <div>
           <h3>Настоящий городок</h3>
-          <span>— №1 —</span>
-          <!-- Можно потом будем сверстать через псевдоэлементы -->
+
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div>
           <h3>Там есть мост дьявола</h3>
-          <span>— №2 —</span>
-          <!-- Можно потом будем сверстать через псевдоэлементы -->
+
           <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
         </div>
         <div>
           <h3>Небольшая площадь</h3>
-          <span>— №3 —</span>
-          <!-- Можно потом будем сверстать через псевдоэлементы -->
+
           <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div>
           <h3>Красивая дорога</h3>
-          <span>— №4 —</span>
-          <!-- Можно потом будем сверстать через псевдоэлементы -->
+
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div>
           <h3>Мало туристов</h3>
-          <span>— №5 —</span>
-          <!-- Можно потом будем сверстать через псевдоэлементы -->
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </section>
 
-      <section>
+      <section class="interested">
         <h2>Заинтересовались?</h2>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
@@ -131,16 +141,19 @@
           <li>
             <a href="#">
               <span class="visually-hidden twitter">Твиттер</span>
+              <img src="./img/icons/twitter.svg" alt="twitter" />
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="visually-hidden facebook">Фейсбук</span>
+              <span class="visually-hidden">Фейсбук</span>
+              <img src="./img/icons/facebook.svg" alt="facebook" />
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="visually-hidden youtube"> Ютьюб</span>
+              <span class="visually-hidden"> Ютьюб</span>
+              <img src="./img/icons/youtube.svg" alt="youtube" />
             </a>
           </li>
         </ul>

@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML Academy: Седона каталог</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -35,9 +45,8 @@
     <main>
       <h1 class="visually-hidden">Гостиницы</h1>
 
-      <section>
-        <h2>Фильтр поиска</h2>
-
+      <section class="search">
+        <h2 class="visually-hidden">Фильтр поиска</h2>
         <div class="search-infrastructure">
           <h3>Инфраструктура</h3>
           <fieldset>
@@ -62,14 +71,14 @@
           <div>До 3000</div>
           <div>
             <input type="range" /><br />
-            <button type="button">Показать</button>
+            <button type="button" class="show">Показать</button>
           </div>
         </div>
       </section>
 
       <section>
-        <h2>Результаты поиска</h2>
-        <div>Найдено: 3</div>
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <h3>Найдено: 3</h3>
         <p>Сортировка:</p>
         <ul>
           <li>По цене</li>
@@ -84,7 +93,7 @@
       </section>
 
       <section>
-        <h2>Результаты поиска: гостиницы</h2>
+        <h2 class="visually-hidden">Результаты поиска: гостиницы</h2>
         <ul>
           <li>
             <a href="#">
@@ -136,8 +145,8 @@
             <p><span>Гостиница</span><span>От 4000 р.</span></p>
             <div>
               <p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
+                <button type="button" class="details">Подробнее</button>
+                <button type="button" class="booking">Забронировать</button>
               </p>
               <div>Рейтинг: 8.5</div>
             </div>
@@ -192,8 +201,8 @@
             <p><span>Мотель</span><span>От 3000 р.</span></p>
             <div>
               <p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
+                <button type="button" class="details">Подробнее</button>
+                <button type="button" class="booking">Забронировать</button>
               </p>
               <div>Рейтинг: 8.9</div>
             </div>
@@ -248,8 +257,8 @@
             <p><span>Апартаменты</span><span>От 2000 р.</span></p>
             <div>
               <p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
+                <button type="button" class="details">Подробнее</button>
+                <button type="button" class="booking">Забронировать</button>
               </p>
               <div>Рейтинг: 9.2</div>
             </div>
@@ -260,9 +269,8 @@
 
     <footer>
       <div>
-        <h2>Visit sedona</h2>
-        <p>#visitsedona</p>
-        <p>тел: +7(495) 666-01-66</p>
+        <a href="#">#visitsedona</a>
+        <a href="tel:+74956660166">+7(495) 666-01-66</a>
       </div>
 
       <div>
@@ -270,16 +278,19 @@
           <li>
             <a href="#">
               <span class="visually-hidden twitter">Твиттер</span>
+              <img src="./img/icons/twitter.svg" alt="twitter" />
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="visually-hidden facebook">Фейсбук</span>
+              <span class="visually-hidden">Фейсбук</span>
+              <img src="./img/icons/facebook.svg" alt="facebook" />
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="visually-hidden youtube"> Ютьюб</span>
+              <span class="visually-hidden"> Ютьюб</span>
+              <img src="./img/icons/youtube.svg" alt="youtube" />
             </a>
           </li>
         </ul>

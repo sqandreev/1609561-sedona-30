@@ -16,7 +16,6 @@
 }
 
 body {
-  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -27,6 +26,16 @@ body {
   counter-reset: p;
 }
 
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-left: 73px;
+  margin-right: 73px;
+}
+
 .main-content {
   background-color: var(--basic-black);
   background-image: url("../img/sedona-background.png");
@@ -35,11 +44,22 @@ body {
   background-size: cover;
   min-height: 509px;
   position: relative;
+  margin-top: -14px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 56px;
 }
 
 a,
@@ -184,4 +204,36 @@ section button {
 .booking:active {
   background-color: var(--special-dark-btn-gray-active);
   color: var(--special-white);
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 56px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(4, 400px);
+}
+
+.first-image {
+  grid-column: 2 / span 2;
+  background-image: url("../img/index-grid-img-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.second-image {
+  grid-column: 1 / span 2;
+  background-image: url("../img/index-grid-img-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 120px;
 }

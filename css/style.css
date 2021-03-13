@@ -4,6 +4,7 @@
   --basic-white: #ffffff;
   --basic-blue: #81b3d2;
   --basic-gray: #766357;
+  --light-gray: #eeeeee;
 
   --special-black: rgba(0, 0, 0, 0.3);
   --special-blue: #669ec0;
@@ -45,6 +46,19 @@ body {
   min-height: 509px;
   position: relative;
   margin-top: -14px;
+  text-align: center;
+}
+
+.welcome {
+  padding-top: 77px;
+}
+
+.to-the-georgeous {
+  padding-top: 11px;
+}
+
+.because {
+  padding-top: 63px;
 }
 
 ul {
@@ -143,10 +157,16 @@ p {
   line-height: 21px;
 }
 
-section div p::before {
-  counter-increment: p;
-  content: "— № " counter(p) " —\a";
-  white-space: pre;
+.main-section {
+  text-align: center;
+}
+
+.introduction h2 {
+  margin-top: 42px;
+}
+
+.introduction p {
+  margin-bottom: 51px;
 }
 
 footer li {
@@ -212,10 +232,52 @@ section button {
   grid-template-rows: 56px;
 }
 
+.main-navigation > div {
+  display: flex;
+}
+
+.main-navigation > div:nth-child(2) {
+  margin: auto;
+}
+
+.main-navigation > div:first-child {
+  margin-left: 73px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-navigation > div:last-child {
+  margin-right: 73px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .advantages-grid {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: repeat(4, 400px);
+}
+
+.advantages-grid > div {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advantages-grid .image-container {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.advantages-grid > div:nth-child(1) {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.advantages-grid > div:nth-child(1) h3 {
+  color: var(--basic-white);
 }
 
 .first-image {
@@ -232,8 +294,48 @@ section button {
   background-position: center;
 }
 
+.bg-gray {
+  background-color: var(--light-gray);
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: 120px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.social-btns {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btns > li {
+  margin-right: 6px;
+}
+
+.made-by {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.search-cost-per-day {
+  grid-column-start: 4;
 }
